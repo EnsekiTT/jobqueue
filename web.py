@@ -20,10 +20,6 @@ if __name__ == '__main__':
     default_port = 5000
 
     parser = optparse.OptionParser()
-    parser.add_option("-H", "--host",
-                      help="Hostname of the Flask app " + \
-                           "[default {0}]".format(default_host),
-                      default=default_host)
     parser.add_option("-P", "--port",
                       help="Port for the Flask app " + \
                            "[default {0}]".format(default_port),
@@ -32,7 +28,6 @@ if __name__ == '__main__':
                       action="store_true", dest="debug",
                       help=optparse.SUPPRESS_HELP)
     options, _ = parser.parse_args()
-    app.debug = True
     app.run(debug=options.debug,
             host=options.host,
             port=int(options.port))
