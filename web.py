@@ -16,7 +16,6 @@ def add():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    default_host = 'localhost'
     default_port = 5000
 
     parser = optparse.OptionParser()
