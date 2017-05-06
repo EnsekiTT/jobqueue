@@ -1,3 +1,6 @@
 {
+  "addons": [
+    "heroku-redis:hobby-dev"
+  ],
   "name": "JobQueue",
 }

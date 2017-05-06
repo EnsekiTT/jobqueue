@@ -1,8 +1,8 @@
 from celery import Celery
 import time
 import os
-#app = Celery('tasks', broker=os.environ['REDIS_URL'])
-app = Celery('tasks', broker='redis://localhost:6379/0')
+app = Celery('tasks', broker=os.environ['REDIS_URL'])
+#app = Celery('tasks', broker='redis://localhost:6379/0')
 
 @app.task
 def task(message):
