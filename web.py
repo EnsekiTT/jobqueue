@@ -1,7 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, flash
 import optparse
 from worker import task
-import numpy as np
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Set your own key'
