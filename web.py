@@ -28,5 +28,4 @@ if __name__ == '__main__':
                       help=optparse.SUPPRESS_HELP)
     options, _ = parser.parse_args()
     app.run(debug=options.debug,
-            host=options.host,
             port=int(options.port))
